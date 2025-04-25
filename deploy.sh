@@ -1,3 +1,5 @@
+fuser -k 3000/tcp
+
 cd CI-CD-Test
 git pull origin main
 npm install
