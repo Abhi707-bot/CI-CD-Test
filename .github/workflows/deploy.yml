@@ -19,9 +19,9 @@ jobs:
           host: 13.60.198.54
           username: ubuntu
           key: ${{ secrets.PRIVATE_SSH_KEY }}
+          target: CI-CD-Test
           port: 22
           script: |
-            cd CI-CD-Test
             git pull origin main
             npm install
             npm run build
